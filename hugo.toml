@@ -1,0 +1,45 @@
+baseURL = 'https://embrays-technologies.netlify.app/' # <- Replace with your actual base URL
+languageCode = 'en-us'
+title = 'Embrays Technologies'
+theme = 'pehtheme-hugo'
+
+pagination.pagerSize = 10
+summaryLength = '20'
+googleAnalytics = 'G-YOUR-GA-ID' # <- Replace with your actual Google Analytics ID
+disqusShortname = 'your-disqus-shortname' # <- Replace with your actual Disqus shortname
+
+[params]
+	description = 'Embrays Technologies: Innovating with cutting-edge software solutions.'
+	mainSections = 'posts'
+
+[author]
+	name = 'Jayshree Sadangi' # <- Your name or the company's founder/CEO
+	bio = 'Software Developer at Embrays Technologies, creating innovative solutions.' # <- Update bio
+	avatar = '/images/your-avatar.jpg' # <- Update the avatar image path
+	twitter = 'https://twitter.com/your-twitter-handle' # <- Update with a real Twitter handle
+
+[menu]
+	[[menu.main]]
+		name = 'Home'
+		pageRef = '/'
+		weight = 10
+	[[menu.main]]
+		name = 'Services'
+		pageRef = '/services'
+		weight = 15
+	[[menu.main]]
+		name = 'Projects'
+		pageRef = '/projects'
+		weight = 20
+	[[menu.main]]
+		name = 'Contact'
+		pageRef = '/contact'
+		weight = 25
+
+[module]
+  [module.hugoVersion]
+    extended = false
+    min = "0.116.0"
+  [module.mounts]
+  	source = 'assets'
+  	target = 'static'
